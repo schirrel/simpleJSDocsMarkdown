@@ -1,0 +1,9 @@
+{
+    "docs": {
+        "files": "./packages/example/dist/**/**/**/*.js",
+        "output": "docs/",
+        "ignore": ["path/to/ignore"],
+        "barrelFilesName": "README.md",
+        "customTags": ["info"]
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": "simplejsdocsmarkdown",
+    "version": "1.0.0",
+    "description": "Simple markdown files generator from jsdoc",
+    "main": "index.js",
+    "scripts": {
+        "e:build": "tsc --project packages/example/tsconfig.json",
+        "docs": "yarn e:build && node ./packages/docs/generate.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@es-joy/jsdoccomment": "^0.43.0",
+        "@typescript-eslint/parser": "^7.8.0",
+        "@typescript-eslint/types": "^7.8.0",
+        "acorn-walk": "^8.3.2",
+        "cli-table3": "^0.6.4",
+        "dotenv": "^16.3.1",
+        "fast-glob": "^3.3.2",
+        "jsdoc": "4.0.2",
+        "jsdoc-to-markdown": "^8.0.0",
+        "node-fetch": "^3.3.2",
+        "postinstall-postinstall": "^2.1.0",
+        "ts-node": "^10.9.2",
+        "typescript": "5.4.5",
+        "yargs": "^17.7.2"
+    },
+    "devDependencies": {
+        "@types/markdown-it": "12.2.3",
+        "@types/linkify-it": "^3.0.1"
+    },
+    "overrides": {
+        "@types/markdown-it": "12.2.3",
+        "@types/linkify-it": "^3.0.1"
+    },
+    "resolutions": {
+        "@types/markdown-it": "12.2.3",
+        "@types/linkify-it": "^3.0.1"
+    }
+}
